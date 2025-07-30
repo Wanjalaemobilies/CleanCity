@@ -350,4 +350,4 @@ const dataService = {
   }
 };
 
-export default dataService; 
+module.exports = dataService;

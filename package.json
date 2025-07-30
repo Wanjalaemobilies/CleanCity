@@ -13,11 +13,17 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "selenium-webdriver": "^4.34.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "jest": "jest",
+    "e2e": "node e2e/login.test.js"
   },
   "eslintConfig": {
     "extends": [
@@ -37,5 +43,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "."
-} 
+  "homepage": ".",
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
